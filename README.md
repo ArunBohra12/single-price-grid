@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ArunBohra12/single-price-grid)
-- Live Site URL: [Add live site URL here](https://arunbohra12.github.io/single-price-grid)
+- Solution URL: [GitHub](https://github.com/ArunBohra12/single-price-grid)
+- Live Site URL: [GitHub Pages](https://arunbohra12.github.io/single-price-grid)
 
 ## My process
 
