@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --yellow: hsl(71, 73%, 54%);
+  --gray: hsl(204, 43%, 93%);
+  --blue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--gray);
+  display: grid;
+  align-content: center;
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  min-height: 100vh;
+  padding: 0 3.2rem;
+}
+
+.main {
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.join-community {
+  padding: 2.8rem 2.4rem 3.2rem;
+}
+
+.main-heading {
+  color: var(--cyan);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+
+.join-community-heading {
+  margin: 2.4rem 0 1.6rem;
+  color: var(--yellow);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: -0.187px;
+}
+
+.join-community-text {
+  color: var(--blue);
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.175px;
+}
+
+.details {
+  background-color: var(--cyan);
+}
+
+.monthly-subscription,
+.why-us {
+  padding: 2.4rem;
+}
+
+.monthly-subscription-heading {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.225px;
+}
+
+.price {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-style: normal;
+  letter-spacing: -0.2px;
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.price .amount {
+  color: var(--white);
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-right: 1.1rem;
+  line-height: normal;
+}
+
+.price .duration {
+  opacity: 0.5;
+  line-height: 2.6rem;
+}
+
+.subscription-details {
+  color: var(--white);
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: -0.2px;
+  margin: 0.4px 0 2.6rem;
+}
+
+.cta {
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--yellow);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  height: 48px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta:hover {
+  background-color: hsl(71, 71%, 49%);
+  transform: translateY(-2px);
+}
+
+.cta:active {
+  transform: translateY(0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.why-us {
+  position: relative;
+  color: var(--white);
+}
+
+.why-us h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.225px;
+  margin-bottom: 1.8rem;
+}
+
+.why-us .transparent-layer {
+  position: absolute;
+  opacity: 0.1519;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+}
+
+.why-us-list {
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 2rem;
+  letter-spacing: -0.175px;
+  list-style-type: none;
+  font-family: inherit;
+  opacity: 0.75;
+}
+
+/* Attribution styles */
+footer {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 740px) {
+  .main {
+    width: 63.5rem;
+    margin: auto;
+  }
+
+  .join-community,
+  .monthly-subscription,
+  .why-us {
+    padding: 4rem;
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .main-heading {
+    font-size: 2.4rem;
+    letter-spacing: -0.3px;
+  }
+
+  .join-community-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+    letter-spacing: -0.225px;
+  }
+
+  .join-community-text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: -0.2px;
+  }
+
+  .amount {
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+
+  footer {
+    display: block;
+  }
+}

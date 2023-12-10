@@ -1,0 +1,15 @@
+{
+  "name": "single-price-grid-component",
+  "version": "1.0.0",
+  "description": "Single price grid component coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
